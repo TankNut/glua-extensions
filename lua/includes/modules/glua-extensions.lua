@@ -1,6 +1,10 @@
 AddCSLuaFile()
 
+local prefix = "glua-extensions/"
+
 local function includeClient(path)
+	path = prefix .. path
+
 	if CLIENT then
 		include(path)
 	else
@@ -9,11 +13,15 @@ local function includeClient(path)
 end
 
 local function includeShared(path)
+	path = prefix .. path
+
 	AddCSLuaFile(path)
 	include(path)
 end
 
 local function includeServer(path)
+	path = prefix .. path
+
 	if SERVER then
 		include(path)
 	end
