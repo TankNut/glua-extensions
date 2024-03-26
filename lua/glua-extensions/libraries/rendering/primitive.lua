@@ -1,9 +1,13 @@
 module("primitive", package.seeall)
 
+local function addVertex(pos, normal, u, v, color)
+	mesh.Position(pos) mesh.Normal(normal)
+	mesh.TexCoord(0, u, v) mesh.Color(color:Unpack())
+	mesh.AdvanceVertex()
+end
+
 function Cylinder(iMesh, height, radius1, radius2, steps, color)
 	color = color or color_white
-
-	local r, g, b, a = color:Unpack()
 
 	local primitiveCount = 2 * steps
 
@@ -44,58 +48,25 @@ function Cylinder(iMesh, height, radius1, radius2, steps, color)
 
 		-- Bottom face
 		if radius1 != 0 then
-			mesh.Position(Vector(0, 0, 0)) mesh.Normal(nDown)
-			mesh.TexCoord(0, 0.5, 0) mesh.Color(r, g, b, a)
-			mesh.AdvanceVertex()
-
-			mesh.Position(indices[1]) mesh.Normal(nDown)
-			mesh.TexCoord(0, 1, 1) mesh.Color(r, g, b, a)
-			mesh.AdvanceVertex()
-
-			mesh.Position(indices[2]) mesh.Normal(nDown)
-			mesh.TexCoord(0, 0, 1) mesh.Color(r, g, b, a)
-			mesh.AdvanceVertex()
+			addVertex(Vector(0, 0, 0), nDown, 0.5, 0, color)
+			addVertex(indices[1],      nDown, 1,   1, color)
+			addVertex(indices[2],      nDown, 0,   1, color)
 		end
 
 		-- Middle strip
-		mesh.Position(indices[1]) mesh.Normal(n1)
-		mesh.TexCoord(0, u1, 1) mesh.Color(r, g, b, a)
-		mesh.AdvanceVertex()
+		addVertex(indices[1], n1, u1, 1, color)
+		addVertex(indices[4], n1, u1, 1, color)
+		addVertex(indices[2], n2, u2, 1, color)
 
-		mesh.Position(indices[4]) mesh.Normal(n1)
-		mesh.TexCoord(0, u1, 0) mesh.Color(r, g, b, a)
-		mesh.AdvanceVertex()
-
-		mesh.Position(indices[2]) mesh.Normal(n2)
-		mesh.TexCoord(0, u2, 1) mesh.Color(r, g, b, a)
-		mesh.AdvanceVertex()
-
-
-		mesh.Position(indices[4]) mesh.Normal(n1)
-		mesh.TexCoord(0, u1, 0) mesh.Color(r, g, b, a)
-		mesh.AdvanceVertex()
-
-		mesh.Position(indices[3]) mesh.Normal(n2)
-		mesh.TexCoord(0, u2, 0) mesh.Color(r, g, b, a)
-		mesh.AdvanceVertex()
-
-		mesh.Position(indices[2]) mesh.Normal(n2)
-		mesh.TexCoord(0, u2, 1) mesh.Color(r, g, b, a)
-		mesh.AdvanceVertex()
+		addVertex(indices[4], n1, u1, 0, color)
+		addVertex(indices[3], n2, u2, 0, color)
+		addVertex(indices[2], n2, u2, 1, color)
 
 		-- Top face
 		if radius2 != 0 then
-			mesh.Position(Vector(0, 0, height)) mesh.Normal(nUp)
-			mesh.TexCoord(0, 0.5, 0) mesh.Color(r, g, b, a)
-			mesh.AdvanceVertex()
-
-			mesh.Position(indices[3]) mesh.Normal(nUp)
-			mesh.TexCoord(0, 1, 1) mesh.Color(r, g, b, a)
-			mesh.AdvanceVertex()
-
-			mesh.Position(indices[4]) mesh.Normal(nUp)
-			mesh.TexCoord(0, 0, 1) mesh.Color(r, g, b, a)
-			mesh.AdvanceVertex()
+			addVertex(Vector(0, 0, height), nUp, 0.5, 0, color)
+			addVertex(indices[3],           nUp, 1,   1, color)
+			addVertex(indices[4],           nUp, 0,   1, color)
 		end
 	end
 

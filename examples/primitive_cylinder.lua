@@ -1,4 +1,4 @@
--- Draws a spinning crystal at the specified location.
+-- Draws a spinning crystal made up of two cylinders at the specified location.
 
 if SERVER then
 	return
