@@ -1,3 +1,5 @@
+AddCSLuaFile()
+
 local function includeClient(path)
 	if CLIENT then
 		include(path)
