@@ -1,7 +1,7 @@
-local meta = FindMetaTable("Entity")
+local entity = FindMetaTable("Entity")
 
 if SERVER then
-	function meta:SetForceTransmit(force)
+	function entity:SetForceTransmit(force)
 		if force then
 			self:AddEFlags(EFL_IN_SKYBOX)
 		else
