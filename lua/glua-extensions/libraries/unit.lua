@@ -1,4 +1,4 @@
-module("primitives", package.seeall)
+module("unit", package.seeall)
 
 -- Default units are completely arbitrary and only exist to serve as the central pivot that conversion happens around.
 -- E.g. length units are all converted first to meters, then to whatever value was put in.
