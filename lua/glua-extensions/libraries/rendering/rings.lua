@@ -42,11 +42,13 @@ function render.AddRing(pos, radius, thickness, steps)
 end
 
 function render.EndRings(color)
+	color = color or color_white
+
 	render.SetStencilReferenceValue(1)
 	render.SetStencilCompareFunction(STENCIL_EQUAL)
 
 	cam.Start2D()
-		surface.SetDrawColor(color)
+		surface.SetDrawColor(color:Unpack())
 		surface.DrawRect(0, 0, ScrW(), ScrH())
 	cam.End2D()
 
