@@ -1,0 +1,254 @@
+/* Defines */
+
+$client: #DEA909;
+$server: #03A9D4;
+
+$header: #2A2A2A;
+$background: #383C3E;
+$background_dark: #252829;
+$background_code: #111213;
+$content: #1D1F20;
+
+$menu_selected: #1C5F9F;
+$menu_selected_hover: #0082ff;
+
+$text_default: #999;
+$text_topic: #0082ff;
+
+/* Header */
+
+#NDHeader {
+	background-color: $header;
+	background-image: none;
+	border-bottom: none;
+	box-shadow: initial;
+	border-left: 10px solid #0082FF;
+}
+
+#HTitle,
+#HSubtitle,
+.HTitle,
+.HSubtitle {
+	font-family: Arial, Helvetica, sans-serif !important;
+}
+
+#NDSearchField {
+	color: #909090;
+	border: none;
+	background-color: #1E1E1E;
+}
+
+#NDThemeMenu {
+	display: none !important;
+}
+
+/* Menu */
+
+#MTabBar,
+#MTabBar * {
+	border: none;
+	background-color: $background_dark !important;
+}
+
+.MTab {
+	height: 25px;
+
+	.Selected,
+	.Selected * {
+		background-color: $menu_selected_hover !important;
+	}
+}
+
+#MContent * {
+	border: none;
+}
+
+#NDSummary #SuContent .first {
+	border: none;
+	background-color: $background_dark !important;
+
+	*:not(.SuEntryIcon) {
+		background-color: $background_dark !important;
+	}
+}
+
+#NDSummary a.SuEntry:hover,
+#NDSummary a.SuEntry:hover *:not(.SuEntryIcon) {
+	background-color: $menu_selected;
+}
+
+#NDMenu,
+#NDMenu *,
+#NDSummary,
+#NDSummary :not(.SuEntryIcon) {
+	background-color: $background;
+	color: white;
+}
+
+#NDSummary {
+	border-left: 2px solid $content;
+	border-right: none;
+}
+
+.MFFolderIcon {
+	background-color: white;
+}
+
+.MEntry.Selected {
+	background-color: $menu_selected !important;
+}
+
+.MFolder {
+	font-weight: 700;
+}
+
+.MEntry.MFolder.Parent:hover {
+	background-color: $menu_selected !important;
+}
+
+.CDLEntry {
+	font-weight: bold !important;
+}
+
+.MEntry.MFolder.Selected,
+.MEntry.MFolder.Parent {
+	font-weight: bold;
+	background-color: $background_dark !important;
+}
+
+.MEntry:hover {
+	background-color: $menu_selected_hover !important;
+
+	* {
+		background-color: $menu_selected_hover !important;
+	}
+}
+
+/* Home */
+
+.NDHomePage body {
+	background: $content;
+
+	.HContent {
+		border: none;
+		box-shadow: none;
+		color: white;
+		background-color: $background;
+	}
+}
+
+/* Page */
+
+.TClass.first span.Qualifier,
+.SUEntry.TClass.first span.Qualifier {
+	display: none;
+}
+
+#NDContent {
+	background-color: $content;
+}
+
+.NDContentPage {
+	body {
+		color: $text_default;
+		background-color: $content;
+		max-width: 75rem;
+	}
+
+	a {
+		color: $text_topic !important;
+		font-weight: 700;
+	}
+
+	.TClass .CTitle {
+		font-size: 2.5rem !important;
+	}
+
+	.TGroup .CTitle {
+		font-size: 2rem;
+	}
+
+	.CTitle {
+		color: $text_topic !important;
+		text-transform: none;
+		border-bottom: 2px solid #80c1ff;
+
+		.Qualifier {
+			color: $text_default !important;
+		}
+	}
+}
+
+/* Footer */
+
+#NDFooter {
+	border: none;
+	background-color: $header;
+}
+
+.MTabAsFolder .MFolderIcon {
+	padding-top: 0.95rem;
+}
+
+/* Tooltip */
+
+.NDToolTip {
+	border: none !important;
+	box-shadow: none;
+	border-radius: 0;
+	background-color: $header;
+	color: $text_default;
+}
+
+/* Code Display */
+
+.NDPrototype,
+.CCode {
+	text-wrap: pretty;
+	border: none !important;
+	color: $text_default !important;
+	background-color: $background_code;
+
+	.PName {
+		color: #bbb;
+	}
+
+	.SHKeyword {
+		color: $text_topic !important;
+	}
+
+	.SHComment {
+		color: #6A9955 !important;
+	}
+
+	.SHString {
+		color: #ecce39 !important;
+	}
+
+	.SHNumber {
+		color: #eee !important;
+	}
+}
+
+/* Custom Comment Types */
+
+.TEnumeration .SuEntryIcon,
+.TEnumeration .SeEntryIcon {
+	background: linear-gradient(0deg, $client 50%, $server 50%);
+	border: none;
+}
+
+.TClient .SuEntryIcon,
+.TClient .SeEntryIcon {
+	background-color: $client;
+}
+
+.TShared .SuEntryIcon,
+.TShared .SeEntryIcon {
+	background: linear-gradient(0deg, $client 50%, $server 50%);
+}
+
+.TServer .SuEntryIcon,
+.TServer .SeEntryIcon {
+	background-color: $server;
+}

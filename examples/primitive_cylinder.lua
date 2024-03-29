@@ -1,36 +1,44 @@
--- Draws a spinning crystal made up of two cylinders at the specified location.
+--[[
+	Package: Examples.Primitive Cylinder
 
-if SERVER then
-	return
-end
+	Draws a spinning crystal made up of two cylinders at the specified location.
 
-local pos = Vector(0, 0, 150)
-local mat = Material("models/props_combine/combine_interface_disp")
+	Uses <render.DrawCylinder: Libraries.render.DrawCylinder>.
 
--- Persisted variables
-local ang = Angle()
-local vel = Angle()
-local targetVel = Angle()
-
-hook.Add("PostDrawTranslucentRenderables", "test", function()
-	if vel == targetVel then
-		targetVel = AngleRand(-50, 50)
+	--- Lua
+	if SERVER then
+		return
 	end
 
-	vel.p = math.Approach(vel.p, targetVel.p, FrameTime() * 5)
-	vel.y = math.Approach(vel.y, targetVel.y, FrameTime() * 5)
-	vel.r = math.Approach(vel.r, targetVel.r, FrameTime() * 5)
+	local pos = Vector(0, 0, 150)
+	local mat = Material("models/props_combine/combine_interface_disp")
 
-	ang = ang + vel * FrameTime()
+	-- Persisted variables
+	local ang = Angle()
+	local vel = Angle()
+	local targetVel = Angle()
 
-	local height = 40
-	local radius = 20
-	local steps = 8
+	hook.Add("PostDrawTranslucentRenderables", "test", function()
+		if vel == targetVel then
+			targetVel = AngleRand(-50, 50)
+		end
 
-	render.SetMaterial(mat)
-	render.DrawCylinder(pos, ang, height, radius, 0, steps)
+		vel.p = math.Approach(vel.p, targetVel.p, FrameTime() * 5)
+		vel.y = math.Approach(vel.y, targetVel.y, FrameTime() * 5)
+		vel.r = math.Approach(vel.r, targetVel.r, FrameTime() * 5)
 
-	render.CullMode(MATERIAL_CULLMODE_CW)
-	render.DrawCylinder(pos, ang, -height, radius, 0, steps)
-	render.CullMode(MATERIAL_CULLMODE_CCW)
-end)
+		ang = ang + vel * FrameTime()
+
+		local height = 40
+		local radius = 20
+		local steps = 8
+
+		render.SetMaterial(mat)
+		render.DrawCylinder(pos, ang, height, radius, 0, steps)
+
+		render.CullMode(MATERIAL_CULLMODE_CW)
+		render.DrawCylinder(pos, ang, -height, radius, 0, steps)
+		render.CullMode(MATERIAL_CULLMODE_CCW)
+	end)
+	---
+]]

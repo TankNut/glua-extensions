@@ -29,6 +29,7 @@ end
 
 includeShared("extensions/entity.lua")
 includeClient("extensions/imesh.lua")
+includeShared("extensions/math.lua")
 includeClient("extensions/render.lua")
 includeShared("extensions/table.lua")
 

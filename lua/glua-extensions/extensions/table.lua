@@ -1,5 +1,32 @@
--- Returns a new table populated with the results of calling `callback` on every entry.
--- Preserves table keys.
+--[[
+	Package: Libraries.table
+
+	Extension functions for the <table: https://wiki.facepunch.com/gmod/table> Libraries.
+
+	See Also:
+		<https://wiki.facepunch.com/gmod/Beginner_Tutorial_Tables>
+]]
+
+-- Group: Functions
+-------------------
+
+--[[
+	Shared: Map
+
+	Returns a new table populated with the result of calling the callback function for each key-value pair.
+
+	Parameters:
+		<table: Types.table> tab - The table to map.
+		<function: Types.function> callback - The callback to call for each key-value pair.
+	
+	Returns:
+		<table: Types.table> - The newly populated table.
+	
+	Callback:
+	--- Lua
+	value = callback(value, key)
+	---
+]]
 function table.Map(tab, callback)
 	local res = {}
 
@@ -10,8 +37,25 @@ function table.Map(tab, callback)
 	return res
 end
 
--- Returns a new table populated with values that `callback` returned true for.
--- Preserves table keys.
+--[[
+	Shared: Filter
+
+	Returns a <table: Types.table> populated with values that pass the filter function.
+
+	This function preserves the original table keys.
+
+	Parameters:
+		<table: Types.table> tab - The table to map.
+		<function: Types.function> callback - The function to use as a filter.
+
+	Callback:
+	--- Lua
+	ok = callback(value, key)
+	---
+
+	See Also:
+		<table.FilterSequential>
+]]
 function table.Filter(tab, callback)
 	local res = {}
 
@@ -24,8 +68,25 @@ function table.Filter(tab, callback)
 	return res
 end
 
--- Returns a new table populated with values that `callback` returned true for.
--- Does not preserve table keys but always returns a sequential table.
+--[[
+	Shared: FilterSequential
+
+	Returns a sequential table populated with values that pass the filter function.
+	
+	This function *does not* preserve the original table keys and instead returns a sequential table.
+
+	Parameters:
+		<table: Types.table> tab - The table to map.
+		<function: Types.function> callback - The function to use as a filter.
+
+	Callback:
+	--- Lua
+	ok = callback(value, key)
+	---
+
+	See Also:
+		<table.Filter>
+]]
 function table.FilterSequential(tab, callback)
 	local res = {}
 
@@ -38,7 +99,28 @@ function table.FilterSequential(tab, callback)
 	return res
 end
 
--- Returns a new table containing all of the values of a table mapped as keys with their values set to `true`.
+--[[
+	Shared: Lookup
+
+	Returns a new table containing all of the values mapped to keys with their value set to true.
+
+	Parameters:
+		<table: Types.table> tab - The table to create a lookup for.
+	
+	Example:
+		Uses a lookup table to check whether a value is a <bool: Types.bool> or a <string: Types.string>.
+		---lua
+		local lookup = table.Lookup({TYPE_BOOL, TYPE_STRING})
+
+		function IsBoolOrString(value)
+			return tobool(lookup[value])
+		end
+
+		print(IsBoolOrString(true)) -- true
+		print(IsBoolOrString("Hello World!")) -- true
+		print(IsBoolOrString({})) -- false
+		---
+]]
 function table.Lookup(tab)
 	local res = {}
 
