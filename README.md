@@ -8,4 +8,4 @@ For development simply clone (or download) the repo and install it as a legacy a
 
 For distribution it'll likely be a while before I'm considering a workshop upload (if at all) so instead your best course of action is to simply copy/paste the functions you need into your addon. It's messy but so are most things with Garry's Mod.
 
-### [Documentation](https://github.com/TankNut/glua-extensions/wiki)
+### [Documentation](https://tanknut.github.io/glua-extensions/)
