@@ -30,7 +30,7 @@ jobs:
         
       - name: Download Natural Docs
         run: |
-          wget https://www.naturaldocs.org/download/natural_docs/2.2/Natural_Docs_2.3.zip -O $RUNNER_TEMP/ND.zip
+          wget https://www.naturaldocs.org/download/natural_docs/2.3/Natural_Docs_2.3.zip -O $RUNNER_TEMP/ND.zip
           unzip $RUNNER_TEMP/ND.zip -d $RUNNER_TEMP
 
       - name: Generate Documentation
