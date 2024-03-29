@@ -1,7 +1,7 @@
 --[[
-	Package: Libraries.table
+	Package: Extensions.table
 
-	Extension functions for the <table: https://wiki.facepunch.com/gmod/table> Libraries.
+	Extension functions for the <table: https://wiki.facepunch.com/gmod/table> Library.
 
 	See Also:
 		<https://wiki.facepunch.com/gmod/Beginner_Tutorial_Tables>
@@ -40,13 +40,16 @@ end
 --[[
 	Shared: Filter
 
-	Returns a <table: Types.table> populated with values that pass the filter function.
+	Returns a table populated with values that pass the filter function.
 
 	This function preserves the original table keys.
 
 	Parameters:
 		<table: Types.table> tab - The table to map.
 		<function: Types.function> callback - The function to use as a filter.
+	
+	Returns:
+		<table: Types.table> - The filtered table.
 
 	Callback:
 	--- Lua
@@ -78,6 +81,9 @@ end
 	Parameters:
 		<table: Types.table> tab - The table to map.
 		<function: Types.function> callback - The function to use as a filter.
+	
+	Returns:
+		<table: Types.table> - The filtered table.
 
 	Callback:
 	--- Lua
@@ -106,6 +112,9 @@ end
 
 	Parameters:
 		<table: Types.table> tab - The table to create a lookup for.
+	
+	Returns:
+		<table: Types.table> - A lookup table based on the input table.
 	
 	Example:
 		Uses a lookup table to check whether a value is a <bool: Types.bool> or a <string: Types.string>.

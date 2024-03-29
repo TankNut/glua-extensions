@@ -3,7 +3,7 @@
 
 	A library that leverages <mesh: https://wiki.facepunch.com/gmod/mesh> functions to create primitive 3D shapes.
 	
-	Functions here usually have counterparts in the <render: Libraries.render> library and <IMesh: Meta.IMesh> metatable.
+	Functions here usually have counterparts in the <render: Extensions.render> library and <IMesh: Extensions.IMesh> metatable.
 ]]
 
 -- Group: Functions
@@ -23,12 +23,12 @@ end
 	Generates a capped <right circular cylinder: https://en.wikipedia.org/wiki/Right_circular_cylinder> or cone based on the arguments passed.
 
 	Parameters:
-		<IMesh: Meta.IMesh> iMesh - The mesh to write to. Can be omitted if you're drawing a dynamic mesh.
+		<IMesh: Extensions.IMesh> iMesh - The mesh to write to. Can be omitted if you're drawing a dynamic mesh.
 		<number: Types.number> height - The height of the cylinder. A negative value will make it cylinder render inside out.
 		<number: Types.number> radius1 - The radius of the bottom face of the cylinder. A value of 0 removes the face entirely.
 		<number: Types.number> radius2 - The radius of the top face of the cylinder. A value of 0 removes the face entirely.
 		<number: Types.number> steps - The amount of steps. This controls the quality of the cylinder. Higher values will lower performance significantly.
-		<Color: Types.Color>? color - The color to draw the cylinder with. *Default:* color_white
+		<Color: Extensions.Color>? color - The color to draw the cylinder with. *Default:* color_white
 ]]
 function primitive.Cylinder(iMesh, height, radius1, radius2, steps, color)
 	color = color or color_white

@@ -1,11 +1,11 @@
 --[[
-	Package: Meta.Entity
+	Package: Extensions.Entity
 
 	Extension functions for the <Entity: https://wiki.facepunch.com/gmod/Entity> metatable.
 ]]
 
--- Group: Functions
--------------------
+-- Group: Methods
+-----------------
 
 local entity = FindMetaTable("Entity")
 

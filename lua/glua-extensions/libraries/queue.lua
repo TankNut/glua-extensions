@@ -74,7 +74,7 @@ end
 	Removes the first item in line from the queue and returns it.
 
 	Returns:
-		<any: Types.any> - The first item in line or `nil` if the queue is empty.
+		<any: Types.any> - The first item in line or nil if the queue is empty.
 ]]
 function CLASS:Pop()
 	local index = self.First

@@ -74,7 +74,7 @@ end
 	Finishes a multi-segment ring started with <StartRings> and draws it to the screen.
 
 	Parameters:
-		*<Color: Types.Color>? color* - The color used to draw the ring. *Default:* color_white
+		*<Color: Extensions.Color>? color* - The color used to draw the ring. *Default:* color_white
 ]]
 function render.EndRings(color)
 	color = color or color_white
@@ -100,7 +100,7 @@ end
 		*<number: Types.number> radius* - The radius of the ring.
 		*<thickness: Types.number> thickness* - The thickness of the ring. Positive values extend out past the radius while negative values extend inwards instead.
 		*<steps: Types.number> steps* - The number of steps. This controls the quality of the ring itself, higher values will lower performance significantly.
-		*<Color: Types.Color>? color* - The color used to draw the ring. *Default:* color_white
+		*<Color: Extensions.Color>? color* - The color used to draw the ring. *Default:* color_white
 ]]
 function render.DrawRing(pos, radius, thickness, steps, color)
 	render.StartRings()
