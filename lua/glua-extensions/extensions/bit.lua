@@ -8,7 +8,7 @@
 -------------------
 
 --[[
-	Shared: bit.Pack
+	Shared: Pack
 
 	Compresses a set of unsigned integers into the space of a single number.
 
@@ -23,7 +23,7 @@
 		<number: Types.number> - The packed integer.
 
 	See Also:
-		<bit.Unpack>
+		<Unpack>
 ]]
 function bit.Pack(bitCount, ...)
 	local args = {...}
@@ -41,7 +41,7 @@ function bit.Pack(bitCount, ...)
 end
 
 --[[
-	Shared: bit.Unpack
+	Shared: Unpack
 
 	Decompresses a packed unsigned integer back into it's constituent numbers.
 
@@ -53,7 +53,7 @@ end
 		<number: Types.number> ... - The unpacked integers, the amount of args returned is equal to the floored value of 32 / bitCount.
 
 	See Also:
-		<bit.Pack>
+		<Pack>
 ]]
 function bit.Unpack(bitCount, num)
 	assert(bitCount <= 32, "bitCount exceeds limit")
