@@ -38,3 +38,14 @@ if SERVER then
 		end
 	end
 end
+
+--[[
+	Shared: ClearBodyGroups
+
+	Resets all of an entity's bodygroups to their default value.
+]]
+function entity:ClearBodyGroups()
+	for i = 0, self:GetNumBodyGroups() - 1 do
+		self:SetBodygroup(i, 0)
+	end
+end
