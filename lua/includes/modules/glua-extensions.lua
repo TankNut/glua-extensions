@@ -37,5 +37,6 @@ includeShared("extensions/table.lua")
 
 includeClient("libraries/rendering/primitive.lua")
 includeClient("libraries/rendering/rings.lua")
+includeShared("libraries/encoder.lua")
 includeShared("libraries/queue.lua")
 includeShared("libraries/unit.lua")
