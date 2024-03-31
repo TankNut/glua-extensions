@@ -7,23 +7,29 @@
 -- Group: Functions
 -------------------
 
-local CLASS = {}
-local META = {__index = CLASS}
+local CLASS = FindMetaTable("Queue")
+
+if not CLASS then
+	CLASS = {}
+	CLASS.__index = CLASS
+
+	debug.getregistry().Queue = CLASS
+end
 
 --[[
 	Shared: util.Queue
 
-	Creates a new Queue object.
+	Creates a new queue object.
 	
 	Returns:
-		<Queue> - The new Queue object.
+		<Queue> - The new queue object.
 ]]
 function util.Queue()
 	return setmetatable({
 		First = 0,
 		Last = -1,
 		Items = {}
-	}, META)
+	}, CLASS)
 end
 
 -- Group: Members
