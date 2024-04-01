@@ -31,3 +31,40 @@ function render.DrawCylinder(pos, ang, height, radius1, radius2, steps, color)
 		primitive.Cylinder(nil, height, radius1, radius2, steps, color)
 	cam.PopModelMatrix()
 end
+
+--[[
+	Client: DrawWorldText
+
+	Draws a piece of text at a certain point in 3D space.
+
+	Parameters:
+		<Vector: Type.Vector> pos - The position to draw the text at.
+		<string: Type.string> text - The text to draw.
+		<bool: Type.bool>? noz - Whether to render through walls. *Default:* false
+]]
+function render.DrawWorldText(pos, text, noz)
+	local ang = (pos - EyePos()):Angle()
+
+	cam.Start3D2D(pos, Angle(0, ang.y - 90, 90), 0.25)
+		if noz then
+			render.DepthRange(0, 0)
+		end
+
+		render.PushFilterMag(TEXFILTER.NONE)
+		render.PushFilterMin(TEXFILTER.NONE)
+			surface.SetFont("BudgetLabel")
+
+			local w, h = surface.GetTextSize(text)
+
+			surface.SetTextColor(255, 255, 255, 255)
+			surface.SetTextPos(-w * 0.5, -h * 0.5)
+
+			surface.DrawText(text)
+		render.PopFilterMin()
+		render.PopFilterMag()
+
+		if noz then
+			render.DepthRange(0, 1)
+		end
+	cam.End3D2D()
+end

@@ -67,3 +67,18 @@ function math.ClampedRemap(value, inMin, inMax, outMin, outMax)
 		math.max(outMin, outMax)
 	)
 end
+
+--[[
+	Shared: Maybe
+
+	Performs a simple random percentage roll.
+
+	Parameters:
+		<number: Types.number> percentage - The percentage chance of returning true.
+	
+	Returns:
+		<bool: Types.bool> - Whether the roll has succeeded.
+]]
+function math.Maybe(percentage)
+	return percentage >= math.random(1, 100)
+end
