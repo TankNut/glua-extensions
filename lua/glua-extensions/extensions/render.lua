@@ -68,3 +68,44 @@ function render.DrawWorldText(pos, text, noz)
 		end
 	cam.End3D2D()
 end
+
+local spotSprite = Material("sprites/light_glow02_add_noz")
+local spotBeam = CreateMaterial("glua-extensions.spotlight", "UnlitGeneric", {
+	["$basetexture"] = "sprites/glow_test02",
+	["$additive"] = 1,
+	["$translucent"] = 1,
+	["$vertexcolor"] = 1
+})
+
+local color_black = Color(0, 0, 0)
+
+--[[
+	Client: DrawSpotlight
+
+	Draws a spotlight similar to the one produced by <point_spotlight: https://developer.valvesoftware.com/wiki/Point_spotlight>.
+
+	Parameters:
+		<Vector: Types.Vector> pos - The position to draw the spotlight at.
+		<Angle: Types.Angle> ang - The angle to draw the spotlight at.
+		<number: Types.number> length - The length of the beam part of the spotlight.
+		<number: Types.number> radius - The radius of the spotlight.
+		<Color: Types.Color> color - The color of the spotlight.
+		<pixelvis_handle_t: https://wiki.facepunch.com/gmod/util.GetPixelVisibleHandle> pixvis - The PixVis handle.
+]]
+function render.DrawSpotlight(pos, ang, length, radius, color, pixvis)
+	local dir = ang:Forward()
+	local dot = (EyePos() - pos):GetNormalized():Dot(dir)
+	local alpha = util.PixelVisible(pos, 10, pixvis)
+	local width = radius * 0.15
+	local size = math.ClampedRemap(dot, 0.75, 1, radius * 0.25, radius)
+
+	render.SetMaterial(spotBeam)
+
+	render.StartBeam(2)
+		render.AddBeam(pos, width, 0, color)
+		render.AddBeam(pos + dir * length, width, 0.99, color_black)
+	render.EndBeam()
+
+	render.SetMaterial(spotSprite)
+	render.DrawSprite(pos, size, size, Color(color.r * alpha, color.g * alpha, color.b * alpha))
+end
