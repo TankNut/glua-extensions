@@ -1,7 +1,7 @@
 --[[
 	Package: Extensions.render
 
-	Extension functions for the <render: https://wiki.facepunch.com/gmod/render> Library.
+	Extension functions for the <render: https://wiki.facepunch.com/gmod/render> library.
 ]]
 
 -- Group: Functions

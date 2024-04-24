@@ -1,7 +1,7 @@
 --[[
 	Package: Extensions.math
 
-	Extension functions for the <math: https://wiki.facepunch.com/gmod/math> Library.
+	Extension functions for the <math: https://wiki.facepunch.com/gmod/math> library.
 ]]
 
 -- Group: Functions

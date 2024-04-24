@@ -1,7 +1,7 @@
 --[[
 	Package: Extensions.bit
 
-	Extension functions for the <bit: https://wiki.facepunch.com/gmod/bit> Library.
+	Extension functions for the <bit: https://wiki.facepunch.com/gmod/bit> library.
 ]]
 
 -- Group: Functions

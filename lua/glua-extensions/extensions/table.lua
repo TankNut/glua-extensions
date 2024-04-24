@@ -1,7 +1,7 @@
 --[[
 	Package: Extensions.table
 
-	Extension functions for the <table: https://wiki.facepunch.com/gmod/table> Library.
+	Extension functions for the <table: https://wiki.facepunch.com/gmod/table> library.
 
 	See Also:
 		<https://wiki.facepunch.com/gmod/Beginner_Tutorial_Tables>
