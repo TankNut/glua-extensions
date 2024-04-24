@@ -38,9 +38,9 @@ end
 	Draws a piece of text at a certain point in 3D space.
 
 	Parameters:
-		<Vector: Type.Vector> pos - The position to draw the text at.
-		<string: Type.string> text - The text to draw.
-		<bool: Type.bool>? noz - Whether to render through walls. *Default:* false
+		<Vector: Types.Vector> pos - The position to draw the text at.
+		<string: Types.string> text - The text to draw.
+		<bool: Types.bool>? noz - Whether to render through walls. *Default:* false
 ]]
 function render.DrawWorldText(pos, text, noz)
 	local ang = (pos - EyePos()):Angle()
