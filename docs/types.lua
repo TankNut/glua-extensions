@@ -33,4 +33,10 @@
 	Shared: Color
 
 	Shared: Entity
+
+	Shared: npc_class
+
+	Accepts either a CLASS_ enum or a string for custom relationship classes.
+
+	Shared: NPC
 ]]
