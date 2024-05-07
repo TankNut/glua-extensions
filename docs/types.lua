@@ -31,4 +31,6 @@
 	Shared: Angle
 
 	Shared: Color
+
+	Shared: Entity
 ]]

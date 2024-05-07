@@ -60,7 +60,6 @@ end
 	Returns:
 		<Color: Types.Color> - The resulting color or nil if an invalid format was passed.
 ]]
-
 function HexToColor(hex)
 	hex = handleHexString(hex)
 

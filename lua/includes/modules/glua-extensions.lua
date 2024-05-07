@@ -29,11 +29,13 @@ end
 
 includeShared("extensions/bit.lua")
 includeShared("extensions/color.lua")
+includeShared("extensions/effects.lua")
 includeShared("extensions/entity.lua")
 includeClient("extensions/imesh.lua")
 includeShared("extensions/math.lua")
 includeClient("extensions/render.lua")
 includeShared("extensions/table.lua")
+includeShared("extensions/util.lua")
 
 includeClient("libraries/rendering/primitive.lua")
 includeClient("libraries/rendering/rings.lua")
