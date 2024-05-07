@@ -85,7 +85,7 @@ function encoder.Float(...)
 end
 
 --[[
-	Shared: encoder.Double
+	Shared: encoder.UInt
 
 	Creates a new bit encoder pre-configured for an unsigned 32-bit integer.
 
@@ -100,7 +100,7 @@ function encoder.UInt(...)
 end
 
 --[[
-	Shared: encoder.Double
+	Shared: encoder.Int
 
 	Creates a new bit encoder pre-configured for a signed 32-bit integer.
 
