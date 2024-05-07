@@ -69,7 +69,7 @@ function render.DrawWorldText(pos, text, noz)
 	cam.End3D2D()
 end
 
-local spotSprite = Material("sprites/light_glow02_add_noz")
+local spotSprite = Material("sprites/light_glow02_add")
 local spotBeam = CreateMaterial("glua-extensions.spotlight", "UnlitGeneric", {
 	["$basetexture"] = "sprites/glow_test02",
 	["$additive"] = 1,
@@ -102,10 +102,17 @@ function render.DrawSpotlight(pos, ang, length, radius, color, pixvis)
 	render.SetMaterial(spotBeam)
 
 	render.StartBeam(2)
-		render.AddBeam(pos, width, 0, color)
+		render.AddBeam(pos, width, 0, ColorAlpha(color, 100))
 		render.AddBeam(pos + dir * length, width, 0.99, color_black)
 	render.EndBeam()
 
 	render.SetMaterial(spotSprite)
+
+	spotSprite:SetFloat("$hdrcolorscale", 0.75)
+
+	render.DepthRange(0, 0)
 	render.DrawSprite(pos, size, size, Color(color.r * alpha, color.g * alpha, color.b * alpha))
+	render.DepthRange(0, 1)
+
+	spotSprite:SetFloat("$hdrcolorscale", 1)
 end
