@@ -225,10 +225,13 @@ function classify.Reset(target)
 	classify.Tracked[target] = nil
 end
 
+-- Group: Internal functions
+----------------------------
+
 --[[
 	Server: ConfigureNPC
 
-	Updates an NPC's relationships towards other entities. You shouldn't have to call this.
+	Updates an NPC's relationships towards other entities.
 
 	Parameters:
 		<NPC: Types.NPC> npc - The NPC to configure.
@@ -253,7 +256,7 @@ end
 --[[
 	Server: ConfigureEntity
 
-	Updates the relationship of other NPC's towards this entity. You shouldn't have to call this.
+	Updates the relationship of other NPC's towards this entity.
 
 	Parameters:
 		<Entity: Types.Entity> ent - The entity to configure.
@@ -287,7 +290,7 @@ end
 --[[
 	Server: Initialize
 
-	Initializes an entity's relationships. You shouldn't have to call this.
+	Initializes an entity's relationships.
 
 	Parameters:
 		<Entity: Types.Entity> ent - The entity to configure.
