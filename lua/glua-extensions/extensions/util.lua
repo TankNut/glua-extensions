@@ -23,7 +23,7 @@ if SERVER then
 			<bool: Types.bool>? doDamage - Whether to deal damage. *Default:* true
 	]]
 	function util.Explosion(pos, ang, owner, inflictor, magnitude, radius, doDamage)
-		doDamage = doDamage or true
+		doDamage = doDamage == nil and true or doDamage
 
 		local flags = bit.bor(8, 32, 1024) + (doDamage and 0 or 1)
 		local ent = ents.Create("env_explosion")
