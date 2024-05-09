@@ -330,3 +330,15 @@ patchFunction("HSLToColor")
 function meta:GetHex(alpha)
 	return ColorToHex(self, alpha)
 end
+
+--[[
+	Shared: GetInverted
+
+	Returns an inverted version of this color.
+
+	Returns:
+		<Color: Types.Color> - A copy of the color with it's R G and B values inverted.
+]]
+function meta:GetInverted()
+	return Color(255 - self.r, 255 - self.g, 255 - self.b, self.a)
+end
