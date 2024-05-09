@@ -4,8 +4,8 @@
 	Global values that are added but don't belong to any one library or extension.
 ]]
 
--- Group: Globals
------------------
+-- Group: Constants
+-------------------
 
 --[[
 	Shared: TRACE_MAX_LENGTH
