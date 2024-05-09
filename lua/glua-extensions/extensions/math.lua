@@ -80,5 +80,5 @@ end
 		<bool: Types.bool> - Whether the roll has succeeded.
 ]]
 function math.Maybe(percentage)
-	return percentage >= math.random(1, 100)
+	return percentage >= math.Rand(1, 100)
 end
