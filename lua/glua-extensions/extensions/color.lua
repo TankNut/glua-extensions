@@ -18,6 +18,11 @@
 
 	Returns:
 		<string: Types.string> - The hex string.
+
+	See Also:
+		<HexToColor>
+
+		<GetHex>
 ]]
 function ColorToHex(color, alpha)
 	if alpha then
@@ -59,6 +64,9 @@ end
 
 	Returns:
 		<Color: Types.Color> - The resulting color or nil if an invalid format was passed.
+	
+	See Also:
+		<ColorToHex>
 ]]
 function HexToColor(hex)
 	hex = handleHexString(hex)
@@ -305,3 +313,20 @@ patchFunction("HSLToColor")
 -- Group: Methods
 -----------------
 
+--[[
+	Shared: GetHex
+
+	Returns the hexidecimal color string for this color object.
+
+	Parameters:
+		<bool: Types.bool>? alpha - Whether to include the alpha in the output. *Default:* false
+
+	Returns:
+		<string: Types.string> - The hex string.
+
+	See Also:
+		<ColorToHex>
+]]
+function meta:GetHex(alpha)
+	return ColorToHex(self, alpha)
+end
