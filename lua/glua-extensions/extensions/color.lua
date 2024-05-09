@@ -262,7 +262,46 @@ function NamedColor(name, alpha)
 		return Color(data[1], data[2], data[3], alpha)
 	end
 end
+
+-- Group: Fixes
+---------------
+
+local meta = FindMetaTable("Color")
+
+local function patchFunction(name, location)
+	location = location or _G
+
+	local func = location[name]
+
+	if debug.getinfo(func, "S").what == "C" then
+		location[name] = function(...)
+			return setmetatable(func(...), meta)
+		end
+	end
+end
+
+--[[
+	Shared: HSVToColor
+
+	HSVToColor now returns a color with the correct metatable set.
+
+	--- Prototype
+	function HSVToColor(hue, saturation, value)
+	---
+]]
+patchFunction("HSVToColor")
+
+--[[
+	Shared: HSLToColor
+
+	HSLToColor now returns a color with the correct metatable set.
+
+	--- Prototype
+	function HSLToColor(hue, saturation, lightness)
+	---
+]]
+patchFunction("HSLToColor")
+
 -- Group: Methods
 -----------------
 
-local meta = FindMetaTable("Color")
