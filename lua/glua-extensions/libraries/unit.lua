@@ -52,7 +52,7 @@ end
 		<number: Types.number> - The converted value.
 ]]
 function unit.Length(value, from, to)
-	return Convert(unit.LengthUnits, value, from, to)
+	return unit.Convert(unit.LengthUnits, value, from, to)
 end
 
 --[[
@@ -69,7 +69,7 @@ end
 		<number: Types.number> - The converted value.
 ]]
 function unit.Mass(value, from, to)
-	return Convert(unit.MassUnits, value, from, to)
+	return unit.Convert(unit.MassUnits, value, from, to)
 end
 
 --[[
@@ -86,7 +86,7 @@ end
 		<number: Types.number> - The converted value.
 ]]
 function unit.Temperature(value, from, to)
-	return Convert(unit.TemperatureUnits, value, from, to)
+	return unit.Convert(unit.TemperatureUnits, value, from, to)
 end
 
 --[[
@@ -103,7 +103,7 @@ end
 		<number: Types.number> - The converted value.
 ]]
 function unit.Time(value, from, to)
-	return Convert(unit.TimeUnits, value, from, to)
+	return unit.Convert(unit.TimeUnits, value, from, to)
 end
 
 -- Group: Structs
