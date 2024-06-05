@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("inr",["Shared"],[["InRange",,[["Extensions.math",,,,0,"File:extensions/math.lua:Extensions.math.InRange","LuaClass:Extensions.math:InRange"]]]]);

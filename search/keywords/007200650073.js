@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("res",["Server"],[["Reset",,[["Libraries.classify",,,,0,"File:libraries/classify.lua:Libraries.classify.Reset","LuaClass:Libraries.classify:Reset"]]]]);

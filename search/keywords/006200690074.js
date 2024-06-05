@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("bit",["Class","Shared"],[["bit",,[["Extensions",,,,0,"File:extensions/bit.lua:Extensions.bit","LuaClass:Extensions.bit"]]],["BitSpace",,[["Classes.Encoder",,,,1,"File:libraries/encoder.lua:Classes.Encoder.BitSpace","LuaClass:Classes.Encoder:BitSpace"]]]]);

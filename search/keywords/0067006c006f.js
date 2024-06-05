@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("glo",["Class"],[["Globals",,[[,,,,0,"File:globals.lua:Globals","LuaClass:Globals"]]]]);

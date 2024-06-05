@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("isd",["Server"],[["IsDefault",,[["Libraries.classify",,,,0,"File:libraries/classify.lua:Libraries.classify.IsDefault","LuaClass:Libraries.classify:IsDefault"]]]]);

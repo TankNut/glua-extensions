@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("pus",["Shared"],[["Push",,[["Classes.Queue",,,,0,"File:libraries/queue.lua:Classes.Queue.Push","LuaClass:Classes.Queue:Push"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("tab",["Class","Shared"],[["table",,[["Extensions",,,,0,"File:extensions/table.lua:Extensions.table","LuaClass:Extensions.table"],["Types",,,,1,"File2:types.lua:Types.table","LuaClass:Types:table"]]]]);

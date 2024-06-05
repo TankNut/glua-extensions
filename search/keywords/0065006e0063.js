@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("enc",["Shared","Class"],[["Encode",,[["Classes.Encoder",,,,0,"File:libraries/encoder.lua:Classes.Encoder.Encode","LuaClass:Classes.Encoder:Encode"]]],["Encoder",,[["Classes",,,,1,"File:libraries/encoder.lua:Classes.Encoder","LuaClass:Classes.Encoder"]]]]);

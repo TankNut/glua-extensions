@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("typ",["Class"],[["Types",,[[,,,,0,"File2:types.lua:Types","LuaClass:Types"]]]]);

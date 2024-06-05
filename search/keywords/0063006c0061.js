@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cla",["Shared","Class"],[["ClampedRemap",,[["Extensions.math",,,,0,"File:extensions/math.lua:Extensions.math.ClampedRemap","LuaClass:Extensions.math:ClampedRemap"]]],["classify",,[["Libraries",,,,1,"File:libraries/classify.lua:Libraries.classify","LuaClass:Libraries.classify"]]]]);
