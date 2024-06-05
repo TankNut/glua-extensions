@@ -27,6 +27,8 @@ local function includeServer(path)
 	end
 end
 
+includeShared("globals.lua")
+
 includeShared("extensions/bit.lua")
 includeShared("extensions/color.lua")
 includeShared("extensions/effects.lua")
