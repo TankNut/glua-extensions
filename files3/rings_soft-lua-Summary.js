@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File3:rings_soft.lua","rings_soft.lua");NDSummary.OnSummaryLoaded("File3:rings_soft.lua",[["Lua","Lua"]],[["Classes","Class"]],[[4,0,0,"<span class=\"Qualifier\">Examples.</span>&#8203;Soft Rings","Examples.Soft_Rings"]]);

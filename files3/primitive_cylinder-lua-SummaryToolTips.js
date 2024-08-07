@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File3:primitive_cylinder.lua",{2:"<div class=\"NDToolTip TClass LLua\"><div class=\"TTSummary\">Draws a spinning crystal made up of two cylinders at the specified location.</div></div>"});

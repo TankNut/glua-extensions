@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("sig",["Shared"],[["Sign",,[["Extensions.math",,,,0,"File:extensions/math.lua:Extensions.math.Sign","LuaClass:Extensions.math:Sign"]]]]);

@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("LuaClass:Libraries.primitive","primitive");NDSummary.OnSummaryLoaded("LuaClass:Libraries.primitive",[["Lua","Lua"]],[["Classes","Class"],["Client","Client"],["Groups","Group"]],[[19,0,0,"<span class=\"Qualifier\">Libraries.</span>&#8203;primitive"],[20,0,2,"Functions","Functions"],[21,0,1,"Cylinder","Cylinder"]]);

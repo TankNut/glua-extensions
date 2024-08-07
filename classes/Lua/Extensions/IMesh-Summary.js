@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("LuaClass:Extensions.IMesh","IMesh");NDSummary.OnSummaryLoaded("LuaClass:Extensions.IMesh",[["Lua","Lua"]],[["Classes","Class"],["Client","Client"],["Groups","Group"]],[[99,0,0,"<span class=\"Qualifier\">Extensions.</span>&#8203;IMesh"],[100,0,2,"Methods","Methods"],[101,0,1,"BuildCylinder","BuildCylinder"]]);

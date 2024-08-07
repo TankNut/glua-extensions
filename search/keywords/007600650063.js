@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("vec",["Shared"],[["Vector",,[["Types",,,,0,"File2:types.lua:Types.Vector","LuaClass:Types:Vector"]]]]);

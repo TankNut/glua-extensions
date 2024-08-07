@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("uni",["Class","Shared"],[["unit",,[["Libraries",,,,0,"File:libraries/unit.lua:Libraries.unit","LuaClass:Libraries.unit"]]],["UnitData",,[["Libraries.unit",,,,1,"File:libraries/unit.lua:Libraries.unit.UnitData","LuaClass:Libraries.unit:UnitData"]]]]);

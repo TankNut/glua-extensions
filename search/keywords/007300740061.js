@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("sta",["Client"],[["StartRings",,[["Libraries.rings",,,,0,"File:libraries/rendering/rings.lua:Libraries.rings.StartRings","LuaClass:Libraries.rings:StartRings"]]]]);

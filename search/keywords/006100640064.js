@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("add",["Server","Client"],[["AddRelationship",,[["Libraries.classify",,,,0,"File:libraries/classify.lua:Libraries.classify.AddRelationship","LuaClass:Libraries.classify:AddRelationship"]]],["AddRing",,[["Libraries.rings",,,,1,"File:libraries/rendering/rings.lua:Libraries.rings.AddRing","LuaClass:Libraries.rings:AddRing"]]]]);

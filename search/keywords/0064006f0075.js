@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("dou",["Shared"],[["Double",,[["Classes.Encoder.encoder",,,,0,"File:libraries/encoder.lua:Classes.Encoder.encoder.Double","LuaClass:Classes.Encoder:encoder.Double"]]]]);

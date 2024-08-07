@@ -1,0 +1,1 @@
+﻿NDContentPage.OnToolTipsLoaded({9:"<div class=\"NDToolTip TShared LLua\"><div class=\"TTSummary\">All numbers in lua use double-precision floating points, though not all functions (especially engine ones) will accept the full range available.</div></div>"});

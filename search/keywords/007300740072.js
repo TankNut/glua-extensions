@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("str",["Shared"],[["string",,[["Types",,,,0,"File2:types.lua:Types.string","LuaClass:Types:string"]]]]);

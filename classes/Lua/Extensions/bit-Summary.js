@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("LuaClass:Extensions.bit","bit");NDSummary.OnSummaryLoaded("LuaClass:Extensions.bit",[["Lua","Lua"]],[["Classes","Class"],["Groups","Group"],["Shared","Shared"]],[[105,0,0,"<span class=\"Qualifier\">Extensions.</span>&#8203;bit"],[106,0,1,"Functions","Functions"],[107,0,2,"Pack","Pack"],[108,0,2,"Unpack","Unpack"]]);

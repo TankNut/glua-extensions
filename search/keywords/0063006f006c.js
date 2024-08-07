@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("col",["Class","Shared"],[["Color",,[["Extensions",,,,0,"File:extensions/color.lua:Extensions.Color","LuaClass:Extensions.Color"],["Types",,,,1,"File2:types.lua:Types.Color","LuaClass:Types:Color"]]],["ColorToHex",,[["Extensions.Color",,,,1,"File:extensions/color.lua:Extensions.Color.ColorToHex","LuaClass:Extensions.Color:ColorToHex"]]]]);
