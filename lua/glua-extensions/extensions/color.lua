@@ -26,9 +26,9 @@
 ]]
 function ColorToHex(color, alpha)
 	if alpha then
-		return "#" .. bit.tohex(bit.Pack(8, color.r, color.g, color.b, color.a), 8):upper()
+		return "#" .. bit.tohex(bit.Pack(8, color.a, color.b, color.g, color.r), 8):upper()
 	else
-		return "#" .. bit.tohex(bit.Pack(8, color.r, color.g, color.b), 8):upper()
+		return "#" .. bit.tohex(bit.Pack(8, color.b, color.g, color.r), 6):upper()
 	end
 end
 
@@ -84,9 +84,11 @@ function HexToColor(hex)
 	end
 
 	if alpha then -- Includes alpha component
-		return Color(bit.Unpack(8, hex))
+		local a, b, g, r = bit.Unpack(8, hex)
+
+		return Color(r, g, b, a)
 	else
-		local r, g, b = bit.Unpack(8, hex)
+		local b, g, r = bit.Unpack(8, hex)
 
 		return Color(r, g, b)
 	end
