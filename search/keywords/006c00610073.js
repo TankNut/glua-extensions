@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("las",["Shared"],[["Last",,[["Classes.Queue",,,,0,"File:libraries/queue.lua:Classes.Queue.Last","LuaClass:Classes.Queue:Last"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("ang",["Shared"],[["Angle",,[["Types",,,,0,"File2:types.lua:Types.Angle","LuaClass:Types:Angle"]]]]);

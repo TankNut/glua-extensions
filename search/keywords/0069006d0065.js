@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("ime",["Class"],[["IMesh",,[["Extensions",,,,0,"File:extensions/imesh.lua:Extensions.IMesh","LuaClass:Extensions.IMesh"]]]]);

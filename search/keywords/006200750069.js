@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("bui",["Client"],[["BuildCylinder",,[["Extensions.IMesh",,,,0,"File:extensions/imesh.lua:Extensions.IMesh.BuildCylinder","LuaClass:Extensions.IMesh:BuildCylinder"]]]]);

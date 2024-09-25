@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("LuaClass:Examples.Wallhack_Pulse",{2:"<div class=\"NDToolTip TClass LLua\"><div class=\"TTSummary\">Draws an expanding pulse around the player, highlights NPC\'s through walls as the expanding ring passes them.</div></div>"});

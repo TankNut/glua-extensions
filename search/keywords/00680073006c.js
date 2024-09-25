@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("hsl",["Shared"],[["HSLToColor",,[["Extensions.Color",,,,0,"File:extensions/color.lua:Extensions.Color.HSLToColor","LuaClass:Extensions.Color:HSLToColor"]]]]);

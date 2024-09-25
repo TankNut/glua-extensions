@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File3:rings_wallhack.lua","rings_wallhack.lua");NDSummary.OnSummaryLoaded("File3:rings_wallhack.lua",[["Lua","Lua"]],[["Classes","Class"]],[[2,0,0,"<span class=\"Qualifier\">Examples.</span>&#8203;Wallhack Pulse","Examples.Wallhack_Pulse"]]);

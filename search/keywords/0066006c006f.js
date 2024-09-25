@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("flo",["Shared"],[["Float",,[["Classes.Encoder.encoder",,,,0,"File:libraries/encoder.lua:Classes.Encoder.encoder.Float","LuaClass:Classes.Encoder:encoder.Float"]]]]);

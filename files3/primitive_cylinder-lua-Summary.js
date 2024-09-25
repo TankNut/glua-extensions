@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File3:primitive_cylinder.lua","primitive_cylinder.lua");NDSummary.OnSummaryLoaded("File3:primitive_cylinder.lua",[["Lua","Lua"]],[["Classes","Class"]],[[4,0,0,"<span class=\"Qualifier\">Examples.</span>&#8203;Primitive Cylinder","Examples.Primitive_Cylinder"]]);

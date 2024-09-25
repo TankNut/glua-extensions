@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("nam",["Server","Shared"],[["Name",,[["Libraries.classify",,,,0,"File:libraries/classify.lua:Libraries.classify.Name","LuaClass:Libraries.classify:Name"]]],["NamedColor",,[["Extensions.Color",,,,1,"File:extensions/color.lua:Extensions.Color.NamedColor","LuaClass:Extensions.Color:NamedColor"]]]]);

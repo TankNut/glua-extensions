@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("sim",["Class"],[["Simple",,[["Examples","Simple Rings",,,0,"File3:rings_simple.lua:Examples.Simple_Rings","LuaClass:Examples.Simple_Rings"]]]]);

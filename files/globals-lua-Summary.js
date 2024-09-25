@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:globals.lua","globals.lua");NDSummary.OnSummaryLoaded("File:globals.lua",[["Lua","Lua"]],[["Classes","Class"],["Groups","Group"],["Shared","Shared"]],[[117,0,0,"Globals","Globals"],[118,0,1,"Constants","Globals.Constants"],[119,0,2,"TRACE_MAX_LENGTH","Globals.TRACE_MAX_LENGTH"]]);

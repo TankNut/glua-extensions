@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File3:rings_soft.lua",{1:"<div class=\"NDToolTip TClass LLua\"><div class=\"TTSummary\">Draws a ring around the player with a softened edge.</div></div>"});

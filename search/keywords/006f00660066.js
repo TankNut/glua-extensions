@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("off",["Shared"],[["Offset",,[["Classes.Encoder",,,,0,"File:libraries/encoder.lua:Classes.Encoder.Offset","LuaClass:Classes.Encoder:Offset"]]]]);

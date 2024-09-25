@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("bas",["Shared"],[["Bases",,[["Classes.Encoder",,,,0,"File:libraries/encoder.lua:Classes.Encoder.Bases","LuaClass:Classes.Encoder:Bases"]]]]);

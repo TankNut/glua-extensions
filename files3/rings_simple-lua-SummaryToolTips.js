@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File3:rings_simple.lua",{3:"<div class=\"NDToolTip TClass LLua\"><div class=\"TTSummary\">Draws an expanding ring around the player.</div></div>"});

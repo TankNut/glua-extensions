@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("spa",["Shared"],[["Sparks",,[["Extensions.effects",,,,0,"File:extensions/effects.lua:Extensions.effects.Sparks","LuaClass:Extensions.effects:Sparks"]]]]);

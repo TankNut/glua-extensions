@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("may",["Shared"],[["Maybe",,[["Extensions.math",,,,0,"File:extensions/math.lua:Extensions.math.Maybe","LuaClass:Extensions.math:Maybe"]]]]);

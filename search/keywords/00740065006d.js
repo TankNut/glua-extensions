@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("tem",["Shared"],[["Temperature",,[["Libraries.unit",,,,0,"File:libraries/unit.lua:Libraries.unit.Temperature","LuaClass:Libraries.unit:Temperature"]]],["TemperatureUnits",,[["Libraries.unit",,,,0,"File:libraries/unit.lua:Libraries.unit.TemperatureUnits","LuaClass:Libraries.unit:TemperatureUnits"]]]]);

@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("LuaClass:Extensions.effects","effects");NDSummary.OnSummaryLoaded("LuaClass:Extensions.effects",[["Lua","Lua"]],[["Classes","Class"],["Groups","Group"],["Shared","Shared"]],[[23,0,0,"<span class=\"Qualifier\">Extensions.</span>&#8203;effects"],[24,0,1,"Functions","Functions"],[25,0,2,"Sparks","Sparks"]]);

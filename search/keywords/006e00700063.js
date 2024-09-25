@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("npc",["Shared"],[["NPC",,[["Types",,,,0,"File2:types.lua:Types.NPC","LuaClass:Types:NPC"]]],["npc_class",,[["Types",,,,0,"File2:types.lua:Types.npc_class","LuaClass:Types:npc_class"]]]]);
