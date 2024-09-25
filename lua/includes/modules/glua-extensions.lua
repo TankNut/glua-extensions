@@ -38,6 +38,7 @@ includeShared("extensions/math.lua")
 includeClient("extensions/render.lua")
 includeShared("extensions/table.lua")
 includeShared("extensions/util.lua")
+includeShared("extensions/vector.lua")
 
 includeClient("libraries/rendering/primitive.lua")
 includeClient("libraries/rendering/rings.lua")

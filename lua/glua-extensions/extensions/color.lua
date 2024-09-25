@@ -344,3 +344,19 @@ end
 function meta:GetInverted()
 	return Color(255 - self.r, 255 - self.g, 255 - self.b, self.a)
 end
+
+local function sRGBToLinear(val)
+	val = val / 255
+
+	if val < 0.04045 then
+		return val / 12.92
+	else
+		return math.pow((val + 0.055) / 1.055, 2.4)
+	end
+end
+
+function meta:GetLuminance()
+	return 0.2126 * sRGBToLinear(self.r)
+		+ 0.7152 * sRGBToLinear(self.g)
+		+ 0.0722 * sRGBToLinear(self.b)
+end

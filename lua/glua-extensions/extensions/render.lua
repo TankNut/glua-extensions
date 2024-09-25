@@ -116,3 +116,7 @@ function render.DrawSpotlight(pos, ang, length, radius, color, pixvis)
 
 	spotSprite:SetFloat("$hdrcolorscale", 1)
 end
+
+function render.IsDrawingMainView()
+	return render.GetRenderTarget() == nil
+end
